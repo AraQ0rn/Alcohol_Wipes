@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import App from './App';
+import { App } from './App';
 
-import { store } from './redux/test-store'
+// import { store } from './redux/test-store'
 import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
         <App />
-      </Provider>
+      {/* </Provider> */}
     </BrowserRouter>
   </React.StrictMode>
 );
