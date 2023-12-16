@@ -16,6 +16,11 @@ import footerMail from '../images/footer_mail.png'
 import footerWhatsapp from '../images/footer_whatsapp.png'
 import footerTelegram from '../images/footer_telegram.png'
 
+import paymentVisa from '../images/payment_visa.png'
+import paymentMastercard from '../images/payment_mastercard.png'
+import paymentIpay from '../images/payment_ipay.png'
+import paymentGpay from '../images/payment_gpay.png'
+
 
 export const store = {
     _state: {
@@ -125,12 +130,24 @@ export const store = {
                 price: 6 + ' рублей',
             }
         ],
-        footer:
+        footer: {
+            mail: footerMail,
+            whatsapp: footerWhatsapp,
+            telegram: footerTelegram
+        },
+        payment: [
             {
-                mail: footerMail,
-                whatsapp: footerWhatsapp,
-                telegram: footerTelegram
+                img: paymentVisa
             },
-        
+            {
+                img: paymentMastercard
+            },
+            {
+                img: paymentIpay
+            },
+            {
+                img: paymentGpay
+            }
+        ]
     }
 }

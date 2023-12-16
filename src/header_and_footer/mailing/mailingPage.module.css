@@ -37,6 +37,12 @@
     padding: 17px 38px;
     padding-right: 100px;
     margin-bottom: 10px;
+    color: #fff;
+    outline: none;
+}
+
+.mailing_sending_inputs_input::placeholder{
+    color: #fff;
 }
 
 .mailing_sending_buttons_button {

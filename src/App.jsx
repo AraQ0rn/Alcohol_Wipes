@@ -9,6 +9,7 @@ import { ContactsPage } from './components/contacts_page/ContactsPage';
 import { BasketPage } from './components/basket_page/BasketPage';
 import { FooterPage } from './header_and_footer/footer/FooterPage';
 import { MailingPage } from './header_and_footer/mailing/MailingPage';
+import { PaymentPage } from './header_and_footer/payment/PaymentPage';
 
 
 export const App = () => {
@@ -25,6 +26,7 @@ export const App = () => {
       </Routes>
       <MailingPage />
       <FooterPage />
+      <PaymentPage/>
     </div>
   )
 }
