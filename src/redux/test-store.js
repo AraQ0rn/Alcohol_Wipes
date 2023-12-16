@@ -12,6 +12,10 @@ import detailedProductsHome_15 from '../images/detailedProductsHome_15.png'
 import detailedProductsPlastic_15 from '../images/detailedProductsPlastic_15.png'
 import detailedProductsGlass_15 from '../images/detailedProductsGlass_15.png'
 
+import footerMail from '../images/footer_mail.png'
+import footerWhatsapp from '../images/footer_whatsapp.png'
+import footerTelegram from '../images/footer_telegram.png'
+
 
 export const store = {
     _state: {
@@ -21,36 +25,42 @@ export const store = {
                 img: productsCar_15,
                 name: 'Универсальные салфетки для автомобиля',
                 price: 1 + ' рублей',
+                put: '/Universal_wipes_for_the_car'
             },
             {
                 id: 2,
                 img: productsAntiseptic_15,
                 name: 'Антисептические салфетки',
                 price: 2 + ' рублей',
+                put: '/Antiseptic_wipes'
             },
             {
                 id: 3,
                 img: productsUniversal_15,
                 name: '«Универсальные» салфетки с Антибактериальным эффектом ',
                 price: 3 + ' рублей',
+                put: '/"Universal"_wipes_with_Antibacterial_effect'
             },
             {
                 id: 4,
                 img: productsHome_15,
                 name: 'Салфетки универсальные для дома',
                 price: 4 + ' рублей',
+                put: '/Napkins_are_universal_for_the_home'
             },
             {
                 id: 5,
                 img: productsPlastic_15,
                 name: 'Салфетки для пластика',
                 price: 5 + ' рублей',
+                put: '/Napkins_for_plastic'
             },
             {
                 id: 6,
                 img: productsGlass_15,
                 name: 'Салфетки для стекла',
                 price: 6 + ' рублей',
+                put: '/Napkins_for_glass'
             }
         ],
         detailedProducts: [
@@ -114,6 +124,13 @@ export const store = {
                 expirationDate: 'Срок годности 36 месяцев',
                 price: 6 + ' рублей',
             }
-        ]
+        ],
+        footer:
+            {
+                mail: footerMail,
+                whatsapp: footerWhatsapp,
+                telegram: footerTelegram
+            },
+        
     }
 }

@@ -1,10 +1,7 @@
 import style from './catalogPage.module.css'
+import { store } from '../../redux/test-store'
+import { NavLink } from 'react-router-dom'
 
 export const CatalogPage = () => {
-
-    return (
-        <>
-            <h2>Каталог</h2>
-        </>
-    )
+    return
 }

@@ -1,0 +1,74 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_company_h2,
+.footer_products_h2,
+.footer_contacts_h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer_company_p1,
+.footer_company_p2,
+.footer_company_p3,
+.footer_company_p4,
+.footer_products_p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.footer_company_p1{
+    margin-bottom: 30px;
+}
+
+.footer_company_p3 {
+    max-width: 170px;
+}
+
+.footer_products_link {
+    text-decoration: none;
+    color: #000;
+}
+.footer_contacts_h2{
+    margin-bottom: 16px;
+}
+.footer_contacts_tel {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+.footer_contacts_container_email{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer_contacts_container_email_img {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.footer_contacts_container_email_link {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer_contacts_messages {
+    display: flex;
+}
+
+.footer_contacts_message_whatsapp {
+    margin-left: 10px;
+    margin-right: 30px;
+}

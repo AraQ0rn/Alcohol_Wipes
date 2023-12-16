@@ -7,7 +7,7 @@ import { DeliveryAndPaymentPage } from './components/delivery_and_payment_page/D
 import { WholesalePage } from './components/wholesale_page/WholesalePage';
 import { ContactsPage } from './components/contacts_page/ContactsPage';
 import { BasketPage } from './components/basket_page/BasketPage';
-import { FooterPage } from './header_and_footer/FooterPage';
+import { FooterPage } from './header_and_footer/footer/FooterPage';
 import { MailingPage } from './header_and_footer/mailing/MailingPage';
 
 
