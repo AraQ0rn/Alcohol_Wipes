@@ -12,7 +12,7 @@ import { MailingPage } from './header_and_footer/mailing/MailingPage';
 import { PaymentPage } from './header_and_footer/payment/PaymentPage';
 
 
-export const App = () => {
+export const App = (props) => {
   return (
     <div>
       <HeaderPage />
@@ -20,13 +20,13 @@ export const App = () => {
         <Route index element={<HomePage />} />
         <Route path='catalog' element={<CatalogPage />} />
         <Route path='delivery_and_payment' element={<DeliveryAndPaymentPage />} />
-        <Route path='wholesale' element={<WholesalePage />} />
+        <Route path='wholesale' element={<WholesalePage wholesale={props.state.wholesale} />} />
         <Route path='contacts' element={<ContactsPage />} />
         <Route path='basket' element={<BasketPage />} />
       </Routes>
       <MailingPage />
-      <FooterPage />
-      <PaymentPage/>
+      <FooterPage state={props.state} />
+      <PaymentPage state={props.state.headerAndFooter} />
     </div>
   )
 }

@@ -1,11 +1,9 @@
 import style from './payment.module.css'
-import { store } from '../../redux/test-store'
 
 
-export const PaymentPage = () => {
+export const PaymentPage = (props) => {
 
-
-    const images = store._state.payment.map(img => (
+    const images = props.state.payment.map(img => (
         <div className={style.payment_images}>
             <img src={img.img} alt='#' />
         </div>

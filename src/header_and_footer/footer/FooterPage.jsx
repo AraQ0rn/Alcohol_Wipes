@@ -1,23 +1,19 @@
 import style from './footer.module.css'
-import { store } from '../../redux/test-store'
 
-export const FooterPage = () => {
-
-
-    const state = store._state
-
-
-    const mail = state.footer.mail
-    const whatsapp = state.footer.whatsapp
-    const telegram = state.footer.telegram
+export const FooterPage = (props) => {
+    
+    const mail = props.state.headerAndFooter.footer.mail
+    const whatsapp = props.state.headerAndFooter.footer.whatsapp
+    const telegram = props.state.headerAndFooter.footer.telegram
 
 
-    const name = state.products.map(product => (
+    const name = props.state.products.map(product => (
         <p className={style.footer_products_p}>
             <a className={style.footer_products_link} href={product.put}>{product.name}</a>
         </p>
     ))
 
+    debugger
     return (
         <div className={style.container}>
             <div className={style.footer}>

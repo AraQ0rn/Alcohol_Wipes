@@ -21,6 +21,8 @@ import paymentMastercard from '../images/payment_mastercard.png'
 import paymentIpay from '../images/payment_ipay.png'
 import paymentGpay from '../images/payment_gpay.png'
 
+import wholesale from '../images/wholesale.png'
+
 
 export const store = {
     _state: {
@@ -130,24 +132,29 @@ export const store = {
                 price: 6 + ' рублей',
             }
         ],
-        footer: {
-            mail: footerMail,
-            whatsapp: footerWhatsapp,
-            telegram: footerTelegram
+        headerAndFooter: {
+            footer: {
+                mail: footerMail,
+                whatsapp: footerWhatsapp,
+                telegram: footerTelegram
+            },
+            payment: [
+                {
+                    img: paymentVisa
+                },
+                {
+                    img: paymentMastercard
+                },
+                {
+                    img: paymentIpay
+                },
+                {
+                    img: paymentGpay
+                }
+            ]
         },
-        payment: [
-            {
-                img: paymentVisa
-            },
-            {
-                img: paymentMastercard
-            },
-            {
-                img: paymentIpay
-            },
-            {
-                img: paymentGpay
-            }
-        ]
+        wholesale: {
+            img: wholesale,
+        },
     }
 }
