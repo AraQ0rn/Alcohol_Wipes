@@ -13,12 +13,13 @@ import { PaymentPage } from './header_and_footer/payment/PaymentPage';
 
 
 export const App = (props) => {
+
   return (
     <div>
       <HeaderPage />
       <Routes>
         <Route index element={<HomePage state={props.state} />} />
-        <Route path='catalog' element={<CatalogPage />} />
+        <Route path='catalog' element={<CatalogPage products={props.state.products} />} />
         <Route path='delivery_and_payment' element={<DeliveryAndPaymentPage deliveryAndPayment={props.state.deliveryAndPayment} />} />
         <Route path='wholesale' element={<WholesalePage wholesale={props.state.wholesale} />} />
         <Route path='contacts' element={<ContactsPage />} />
