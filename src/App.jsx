@@ -17,9 +17,9 @@ export const App = (props) => {
     <div>
       <HeaderPage />
       <Routes>
-        <Route index element={<HomePage />} />
+        <Route index element={<HomePage state={props.state} />} />
         <Route path='catalog' element={<CatalogPage />} />
-        <Route path='delivery_and_payment' element={<DeliveryAndPaymentPage />} />
+        <Route path='delivery_and_payment' element={<DeliveryAndPaymentPage deliveryAndPayment={props.state.deliveryAndPayment} />} />
         <Route path='wholesale' element={<WholesalePage wholesale={props.state.wholesale} />} />
         <Route path='contacts' element={<ContactsPage />} />
         <Route path='basket' element={<BasketPage />} />

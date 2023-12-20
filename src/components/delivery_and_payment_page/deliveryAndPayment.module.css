@@ -1,0 +1,60 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: #414142;
+}
+
+.deliveryAndPayment_h2 {
+    font-size: 48px;
+    line-height: 58px;
+    max-width: 260px;
+}
+
+.deliveryAndPayment_p {
+    max-width: 700px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 120px;
+}
+
+.deliveryAndPayment_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery,
+.payment {
+    display: flex;
+}
+
+.payment {
+    margin-right: 150px;
+}
+
+.delivery_text,
+.payment_text {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.delivery_text_h2,
+.payment_text_h2 {
+    max-width: 100px;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: -12px;
+    margin-bottom: 40px;
+}
+
+.delivery_text_p1,
+.delivery_text_p2,
+.delivery_text_p3,
+.payment_text_p1,
+.payment_text_p2,
+.payment_text_p3 {
+    margin: 0 0 10px;
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 22px;
+}

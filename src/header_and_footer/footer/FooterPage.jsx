@@ -13,7 +13,6 @@ export const FooterPage = (props) => {
         </p>
     ))
 
-    debugger
     return (
         <div className={style.container}>
             <div className={style.footer}>

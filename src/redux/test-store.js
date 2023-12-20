@@ -23,6 +23,9 @@ import paymentGpay from '../images/payment_gpay.png'
 
 import wholesale from '../images/wholesale.png'
 
+import delivery from '../images/delivery_img.png'
+import payment from '../images/payment_img.png'
+
 
 export const store = {
     _state: {
@@ -154,7 +157,11 @@ export const store = {
             ]
         },
         wholesale: {
-            img: wholesale,
+            img: wholesale
+        },
+        deliveryAndPayment: {
+            deliveryImg: delivery,
+            paymentImg: payment
         },
     }
 }
