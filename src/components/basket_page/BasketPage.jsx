@@ -1,10 +1,12 @@
+import { NavLink } from 'react-router-dom'
 import style from './basket.module.css'
 
-export const BasketPage = () => {
+export const BasketPage = (props) => {
 
-    return (
-        <>
-            <h2>Корзина</h2>
-        </>
-    )
+    const basket = props.state.detailedProducts.map(e => (
+        <NavLink to={e.put} ><img src={e.img} /></NavLink>
+
+    ))
+
+    return basket
 }

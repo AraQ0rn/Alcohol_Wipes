@@ -83,6 +83,7 @@ export const store = {
                 storageConditions: 'хранить в сухом недоступном для детей месте от -10 до +25, и относительной влажности не более 75%. ',
                 expirationDate: 'Срок годности 36 месяцев',
                 price: 1 + ' рублей',
+                put: '/Universal_wipes_for_the_car'
             },
             {
                 id: 2,

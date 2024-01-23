@@ -14,6 +14,10 @@ import { PaymentPage } from './header_and_footer/payment/PaymentPage';
 
 export const App = (props) => {
 
+  const products = props.state.products.map(e =>
+    <Route path={e.put} element={<BasketPage state={props.state} />} />
+  )
+
   return (
     <div>
       <HeaderPage />
@@ -23,7 +27,8 @@ export const App = (props) => {
         <Route path='delivery_and_payment' element={<DeliveryAndPaymentPage deliveryAndPayment={props.state.deliveryAndPayment} />} />
         <Route path='wholesale' element={<WholesalePage wholesale={props.state.wholesale} />} />
         <Route path='contacts' element={<ContactsPage />} />
-        <Route path='basket' element={<BasketPage />} />
+        {/* <Route path='basket' element={<BasketPage />} /> */}
+        {products}
       </Routes>
       <MailingPage />
       <FooterPage state={props.state} />
